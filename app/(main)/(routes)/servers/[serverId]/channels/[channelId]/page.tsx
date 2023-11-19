@@ -6,6 +6,7 @@ import { redirect } from "next/navigation";
 
 import { ChatHeader } from "@/components/chat/chat-header";
 import { ChatInput } from "@/components/chat/chat-input";
+import { ChatMessages } from "@/components/chat/chat-messages";
 
 interface ChannelIdPageProps {
 	params: {
@@ -45,16 +46,29 @@ const ChannelIdPage = async ({ params }: ChannelIdPageProps) => {
 				serverId={channel.serverId}
 				type="channel"
 			/>
-			<div className="flex-1">Future Messages</div>
-            <ChatInput
-                name={channel.name}
-                type="channel"
-                apiUrl="/api/socket/messages"
-                query={{
-                    channelId: channel.id,
-                    serverId: channel.serverId,
-                }}
-            />
+			<ChatMessages
+				name={channel.name}
+				member={member}
+				chatId={channel.id}
+				apiUrl="/api/messages"
+				socketUrl="/api/socket/messages"
+				socketQuery={{
+					channelId: channel.id,
+					serverId: channel.serverId,
+				}}
+				type="channel"
+				paramKey="channelId"
+				paramValue={channel.id}
+			/>
+			<ChatInput
+				name={channel.name}
+				type="channel"
+				apiUrl="/api/socket/messages"
+				query={{
+					channelId: channel.id,
+					serverId: channel.serverId,
+				}}
+			/>
 		</div>
 	);
 };
