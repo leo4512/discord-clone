@@ -13,7 +13,7 @@ const font = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Discord Open",
-	description: "Discord cloned",
+	description: "Discord clone",
 };
 
 export default function RootLayout({
