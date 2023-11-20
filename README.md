@@ -1,7 +1,7 @@
 # Discord Clone
 
-<img width="2324" alt="Screenshot 2023-11-20 at 16 58 51" src="https://github.com/leo4512/discord-clone/assets/91560230/0326c8a9-1996-4cb6-8ddb-cc83ac4c22fa">
-<img width="2323" alt="Screenshot 2023-11-20 at 16 59 47" src="https://github.com/leo4512/discord-clone/assets/91560230/afc6915d-fb95-430f-87d9-0dafc865cb17">
+<img width="2324" alt="Screenshot 2023-11-20 at 16 58 51" src="https://github.com/leo4512/discord-clone/assets/91560230/6219c0a7-1048-4887-8ec6-2a512a370b0a">
+<img width="2323" alt="Screenshot 2023-11-20 at 16 59 47" src="https://github.com/leo4512/discord-clone/assets/91560230/7909208b-1920-47b8-a234-b614bcddabf3">
 
 This project is a Next.JS based web application. It features major functionalities of discord, such as:
 - server creation/modification/deletion
